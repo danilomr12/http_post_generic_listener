@@ -15,14 +15,4 @@ export class AppController {
   async agency(@Body() agency: any): Promise<string> {
     return await this.appService.saveAgency(agency);
   }
-
-  @Post('daft')
-  async daft(@Body() daftProperty: any): Promise<string> {
-    return await this.appService.saveDaftProperty(daftProperty);
-  }
-
-  @Post('PPR')
-  async ppr(@Body() pprProperty: any[]): Promise<string> {
-    return await this.appService.savePprProperty(pprProperty);
-  }
 }

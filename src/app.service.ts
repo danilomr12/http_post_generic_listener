@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return 'Hello!';
   }
 
   async saveAgency(agency): Promise<string> {
@@ -15,27 +15,30 @@ export class AppService {
     });
   }
 
-  async saveDaftProperty(daftProperty): Promise<string> {
-    console.log(daftProperty);
+  async logObject(objectItem): Promise<string> {
+    console.log(`Received item `);
+    console.log(objectItem);
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve('Saved Daft Property');
-      }, 1000)
-    })
+        resolve('Processed object');
+      }, 1000);
+    });
   }
 
-  async savePprProperty(pprPropertyList: any[]): Promise<string> {
-    console.log(`Received batch of ${pprPropertyList.length} ppr properties`);
-    if (!(pprPropertyList instanceof Array)) {
-      pprPropertyList = [pprPropertyList];
+  async logList(objectItemList: any[]): Promise<string> {
+    if (!(objectItemList instanceof Array)) {
+      objectItemList = [objectItemList];
     }
-    pprPropertyList.forEach((property) => {
-      console.log(pprPropertyList);
+    const listSize = objectItemList.length;
+    console.log(`Received batch of ${listSize} objects`);
+
+    objectItemList.forEach((property) => {
+      console.log(property);
     });
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve('Saved ppr Properties');
+        resolve(`Processed list of ${listSize} item(s)`);
       }, 400);
     });
   }
