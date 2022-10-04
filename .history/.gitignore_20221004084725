@@ -1,0 +1,58 @@
+# compiled output
+/dist
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/scrapyd-listener/src/app.controller_20221003081505.ts
+.history/scrapyd-listener/src/app.service_20220530172255.ts
+.history/scrapyd-listener/src/app.service_20220905103149.ts
+.history/scrapyd-listener/src/app.service_20220905103735.ts
+.history/scrapyd-listener/src/app.service_20220905104013.ts
+.history/scrapyd-listener/src/app.service_20220905105051.ts
+.history/scrapyd-listener/src/app.service_20220905105649.ts
+.history/scrapyd-listener/src/app.service_20220905110639.ts
+.history/scrapyd-listener/src/app.service_20220905111034.ts
+.history/scrapyd-listener/src/app.service_20220905111124.ts
+.history/scrapyd-listener/src/app.service_20220905111136.ts
+.history/scrapyd-listener/src/app.service_20220905120526.ts
+.history/scrapyd-listener/src/main_20220810143208.ts
+.history/src/app.controller_20221003082854.ts
+.history/src/app.controller_20221003083326.ts
+.history/src/app.controller_20221003083818.ts
+.history/src/app.controller_20221003083834.ts
+.history/src/app.service_20221003082854.ts
+.history/src/app.service_20221003083818.ts
+.history/src/app.service_20221003131049.ts
+.history/src/app.service_20221003131114.ts
+.history/src/app.service_20221003131918.ts
+.history/src/app.service_20221003132052.ts
+.history/src/app.service_20221003132106.ts
+.history/src/app.service_20221003132143.ts
+.history/src/app.service_20221003132156.ts
+.history/src/app.service_20221003132157.ts
+.history/test/app.e2e-spec_20221003082854.ts
+.history/test/app.e2e-spec_20221003083215.ts
+.history/test/app.e2e-spec_20221003083326.ts

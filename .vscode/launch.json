@@ -5,17 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
-            "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/scrapyd-listener/src/main.ts",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ],
-            "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v17.4.0/bin/node"
+          "type": "node",
+          "request": "launch",
+          "name": "Debug Nest Framework",
+          "args": ["${workspaceFolder}/src/main.ts"],
+          "runtimeArgs": [ "--nolazy", "-r", "ts-node/register", "-r", "tsconfig-paths/register"],
+          "sourceMaps": true,
+          "envFile": "${workspaceFolder}/.env",
+          "cwd": "${workspaceRoot}",
+          "console": "integratedTerminal",
+          "protocol": "inspector"
         }
-    ]
+      ]
 }
