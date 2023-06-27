@@ -14,4 +14,5 @@ build:
 	docker build  --progress=plain --tag generic-http-post-listener:0.1 --target production .
 
 run:
+	docker rm ${PROJ_NAME}-${PROJ_VERSION}
 	docker run --env-file .env --name ${PROJ_NAME}-${PROJ_VERSION} -p${EXPOSED_PORT}:3000 ${PROJ_NAME}:${PROJ_VERSION}
