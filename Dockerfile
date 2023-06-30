@@ -41,7 +41,7 @@ USER node
 ###################
 
 FROM node:18.10.0-alpine As production
-
+RUN apk --no-cache add curl jq
 COPY --chown=node:node --from=build /usr/src/app/node_modules ./node_modules
 COPY --chown=node:node --from=build /usr/src/app/dist ./dist
 
