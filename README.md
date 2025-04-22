@@ -38,7 +38,7 @@ make run
 ```
 
 ## Installation
-
+tested with 18.10.0
 ```bash
 npm install
 ```
